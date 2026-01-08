@@ -9,7 +9,7 @@ Simple image detection using dog photo-
 import cv2
 import matplotlib.pyplot as plt
 
-img = cv2.imread('download.jpg')
+img = cv2.imread('"add img ".jpg')
 if img is None:
     raise ValueError("Image not found")
 
