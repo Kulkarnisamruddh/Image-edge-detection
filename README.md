@@ -32,6 +32,8 @@ plt.show()
 
 cv2.imwrite('dancing-spider-canny.png', edges)
 
+this is the output we will see after running the code
+
 
 <img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/dbc6f89e-135c-40b0-91b3-03ce7fd0535e" />
 
