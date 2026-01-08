@@ -7,10 +7,13 @@ Simple image detection using dog photo-
 ![download](https://github.com/user-attachments/assets/80e06096-ad5c-4afd-93e3-b94705863485)
 
 import cv2
+
 import matplotlib.pyplot as plt
 
 img = cv2.imread('"add img ".jpg')
+
 if img is None:
+
     raise ValueError("Image not found")
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -18,9 +21,13 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray, 50, 150, apertureSize=3, L2gradient=True)
 
 plt.figure()
+
 plt.title('Spider Edges')
+
 plt.imshow(edges, cmap='gray')
+
 plt.axis('off')
+
 plt.show()
 
 cv2.imwrite('dancing-spider-canny.png', edges)
